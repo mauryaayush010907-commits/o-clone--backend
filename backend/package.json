@@ -1,0 +1,32 @@
+{
+  "name": "drift-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Drift — real-time random video/text chat signaling, matchmaking and moderation backend",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.1",
+    "ioredis": "^5.4.2",
+    "mongoose": "^8.9.5",
+    "socket.io": "^4.8.1",
+    "socket.io-redis-adapter": "^8.3.0"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.1",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}
